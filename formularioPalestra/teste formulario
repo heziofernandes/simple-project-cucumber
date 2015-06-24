@@ -1,0 +1,40 @@
+package testexecution;
+
+import org.junit.Assert;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import br.com.neoway.webdriver.ChromeWebDriver;
+
+public class teste {
+
+	public static WebDriver driver;
+	public static WebDriverWait wait;
+
+	public teste() {
+		driver = ChromeWebDriver.createAndStartService();
+		wait = new WebDriverWait(driver, 20);
+		driver.manage().window().maximize();
+		driver.get("file:///home/hezio/Imagens/formularioPalestra/formautomacao.html");
+		Assert.assertEquals("Formulário Automação", driver.getTitle());
+	}
+
+	@Test
+	public void execute() {
+		driver.findElement(By.id("nome")).sendKeys("Fernandes");
+		driver.findElement(By.id("login")).sendKeys("FernandesLogin");
+		driver.findElement(By.id("password")).sendKeys("FernandesPassaword");
+		driver.findElement(By.id("email")).sendKeys("fernandes@neoway.com");
+		driver.findElement(By.id("endereco")).sendKeys(
+				"rua joão ferreira de lá");
+		driver.findElement(By.id("referencia")).sendKeys(
+				"Teste de regressão com webdriver");
+		Select select = new Select(driver.findElement(By.id("optionsRadios4")));
+		select.selectByIndex(4);
+	}
+
+}
