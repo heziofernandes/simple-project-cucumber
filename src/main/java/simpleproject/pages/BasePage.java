@@ -3,6 +3,7 @@ package simpleproject.pages;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
+import cucumber.api.java.After;
 import simpleproject.framework.MessageConstants;
 import simpleproject.webdriver.ChromeWebDriver;
 
@@ -28,4 +29,5 @@ public class BasePage {
 	public WebDriver getDriver() {
 		return driver;
 	}
+	
 }

@@ -84,4 +84,8 @@ public class RegisterFields {
 		Assert.assertEquals("Cadastro Realizado com Sucesso", driver
 				.findElement(By.id("qa-popup")).getText());
 	}
+	
+	public void assertlogOnSystem(){
+		Assert.assertEquals("Formulário Automação", driver.getTitle());
+	}
 }

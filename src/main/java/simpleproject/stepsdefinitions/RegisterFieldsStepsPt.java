@@ -1,10 +1,9 @@
-package simpleproject.cucumbersteps;
+package simpleproject.stepsdefinitions;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 import simpleproject.pages.BasePage;
-import simpleproject.pages.LoginPage;
 import simpleproject.pages.RegisterFields;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
@@ -14,21 +13,23 @@ import cucumber.api.java.pt.Quando;
  * 
  * @author Hezio D. Fernandes - QA Automation Engineer
  *
+ * Class steps implementada para feature escrita em português.
  */
 
-public class RegisterFieldsSteps {
+public class RegisterFieldsStepsPt {
 	private RegisterFields registerFields;
 	private WebDriver driver;
 
-	public RegisterFieldsSteps() {
+	public RegisterFieldsStepsPt() {
 		driver = new BasePage().getDriver();
 		registerFields = PageFactory.initElements(driver, RegisterFields.class);
 	}
-
+	
 	@Dado("^que o usuário esta logado$")
 	public void que_o_usuário_esta_logado() throws Throwable {
+		registerFields.assertlogOnSystem();
 	}
-
+	
 	@Quando("^informar o nome$")
 	public void informar_o_nome() throws Throwable {
 		registerFields.typeName();

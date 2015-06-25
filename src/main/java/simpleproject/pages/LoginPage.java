@@ -10,7 +10,7 @@ import simpleproject.framework.MessageConstants;
 
 /**
  * 
- * @author hezinho
+ * @author Hezio D. Fernandes - QA Automation Engineer
  *
  */
 
@@ -24,8 +24,6 @@ private WebElement typeLogin;
 
 @FindBy(id="")
 private WebElement typePassaword;
-
-
 
 
 

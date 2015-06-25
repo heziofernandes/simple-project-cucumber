@@ -12,7 +12,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.seleniumhq.jetty7.util.log.Logger;
 
 import com.gargoylesoftware.htmlunit.ElementNotFoundException;
-import com.outbrain.selenium.extjs.helpers.ComboBoxHelper;
 import com.thoughtworks.selenium.Selenium;
 
 /**
@@ -283,12 +282,7 @@ public class WebDriverUtil {
 		return nomeCarga;
 	}
 
-	public void atribuiItemColuna(String valor) throws Exception {
-		WebElement campoTexto = ComboBoxHelper.getComboVisibleByCss(driver,
-				".ui-select-search.select2-input");
-		campoTexto.sendKeys(valor);
-		WebDriverUtil.pressionaTeclaTab();
-	}
+	
 
 	public static void aguardaElementoVisivelPorClassName(String className) {
 		try {
@@ -338,35 +332,6 @@ public class WebDriverUtil {
 					.validFindElementCSS(".uploadFile.ng-dirty.ng-valid.ng-valid-required");
 		}
 		aguardaElementoVisivelPorID("btnSave");
-	}
-
-	public void clicaBotaoImportar() throws Exception {
-		ComboBoxHelper.selectRowByCssAndTextItem(driver, ".btn.import",
-				"Importar no SIMM");
-	}
-
-	public void validaCargaNaGrid(String nomeCarga) throws Exception {
-		aguardaElementoVisivelPorCss(".card-content.col-md-12");
-		Boolean validacaoCargaImportada = WebDriverUtil
-				.validFindElementCSSAndText(
-						".col.col-md-12.card-text.ng-binding", nomeCarga);
-		if (!validacaoCargaImportada) {
-			throw new ElementNotFoundException(
-					".col.col-md-12.card-text.ng-binding", "Erros encontrados",
-					" Erro ao Validar nome do Arquivo importado!");
-		}
-	}
-
-	public void validaErroEspacoEmBranco() throws Exception {
-		aguardaElementoVisivelPorCss(".progress-error");
-		Boolean erroValidacao = WebDriverUtil.validFindElementCSSAndText(
-				".form-row.ng-binding",
-				"Linhas Processadas: 120\nErros Encontrados: 3");
-		if (!erroValidacao) {
-			throw new ElementNotFoundException(".form-row.ng-binding",
-					"Linhas Processadas: 120\nErros Encontrados: 3",
-					"Linhas Processadas: 120\nErros Encontrados: 3 nao encontrado!");
-		}
 	}
 
 	public static void typeElementoPorID(String id, String text) {

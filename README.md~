@@ -1,10 +1,9 @@
 # simple-project-cucumber
 Introduction of test automation project.
 
-
-Project contains a test scenario that fills out a form with different types of fields and validations. The class can be executed in both Portuguese and in English languages for teaching purposes.
-To execute English class: TestRegistrationForm
-To execute class in Portuguese: TestRegistrationFormPt
+Project contains a test scenario that fills out a form with different types of fields and validations, the class can be performed both in Portuguese and in English for teaching purposes.
+English class: TestRegistrationForm
+class in Portuguese: TestRegistrationFormPt
 
 Project using Cucumber-jvm, Maven, Java and JUnit.
 

@@ -46,13 +46,7 @@
 			<artifactId>robotium-solo</artifactId>
 			<version>5.0.1</version>
 		</dependency>
-
-		<dependency>
-			<groupId>hf-extends</groupId>
-			<artifactId>HF-Extends</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-
+		
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
