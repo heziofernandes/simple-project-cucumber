@@ -42,6 +42,7 @@ public class RegisterFieldsSteps {
 
 	@Dado("^insert a password$")
 	public void insert_a_password() throws Throwable {
+		registerFields.typePassword();
 	}
 
 	@Dado("^insert a email$")
@@ -70,18 +71,14 @@ public class RegisterFieldsSteps {
 	}
 
 	@Dado("^save the form$")
-	public void save_the_form() throws Throwable {
+	public void save_the_form(){
 		registerFields.clickSave();
 	}
 
 	@Dado("^the system informs the administrator of successfully register.$")
-	public void the_system_informs_the_administrator_of_successfully_register()
-			throws Throwable {
+	public void the_system_informs_the_administrator_of_successfully_register(){
+		registerFields.assertSave();
 	}
 	
-	@After(value ="@registration,@cadastro")
-	public void closeApplication(){
-		driver.close();
-	}
-
+	
 }

@@ -8,7 +8,7 @@ To execute class in Portuguese: TestRegistrationFormPt
 
 Project using Cucumber-jvm, Maven, Java and JUnit.
 
-##############################################################3
+##############################################################
 
 Projeto contém um cenário de teste que preenche um formulário com diferentes tipos de campos e validações, a classe pode ser executada tanto em português quanto em Inglês para fins didáticos.
 classe para execução em Inglês: TestRegistrationForm

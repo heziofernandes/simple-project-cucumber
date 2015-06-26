@@ -7,13 +7,12 @@ package simpleproject.framework;
  */
 
 public class MessageConstants {
-	// public static final String URL_ = // "file:///home/hezio/Imagens/formularioPalestra/formautomacao.html";
-
-	// Este path URL busca o arquivo formautomacao.html baixado junto com o
-	// projeto do Git.
+	 
+	
+	public static final String URL =  "file:///home/hezinho/dev/simple-project/formularioPalestra/formautomacao.html";
 
 	// This path URL search the downloaded file with the Git project .
-	public static final String URL = "Insert path URL here";
+//	public static final String URL = "Insert path URL here";
 	public static final String ARQUIVO_OK = ClassLoader.getSystemResource("data.csv").getPath();
 	public static final String LOGIN = "Teste_Drumfeel";
 	public static final String PASSWORD = "1235456@#!";

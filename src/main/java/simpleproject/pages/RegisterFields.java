@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
+import cucumber.api.java.After;
 import simpleproject.framework.MessageConstants;
 
 public class RegisterFields {
@@ -81,11 +82,12 @@ public class RegisterFields {
 	}
 
 	public void assertSave() {
-		Assert.assertEquals("Cadastro Realizado com Sucesso", driver
-				.findElement(By.id("qa-popup")).getText());
+		Assert.assertEquals("Cadastro Realizado com Sucesso!", driver
+				.findElement(By.id("message")).getText());
 	}
-	
-	public void assertlogOnSystem(){
+
+	public void assertlogOnSystem() {
 		Assert.assertEquals("Formulário Automação", driver.getTitle());
 	}
+
 }

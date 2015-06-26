@@ -34,7 +34,7 @@ formatter.match({
   "location": "RegisterFieldsSteps.the_administrator_is_logged_in()"
 });
 formatter.result({
-  "duration": 2147094181,
+  "duration": 4073207946,
   "status": "passed"
 });
 formatter.scenario({
@@ -105,74 +105,74 @@ formatter.match({
   "location": "RegisterFieldsSteps.insert_a_name()"
 });
 formatter.result({
-  "duration": 78021179,
+  "duration": 371759551,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterFieldsSteps.insert_a_login()"
 });
 formatter.result({
-  "duration": 72006894,
+  "duration": 381627829,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterFieldsSteps.insert_a_password()"
 });
 formatter.result({
-  "duration": 19233,
+  "duration": 419671313,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterFieldsSteps.insert_a_email()"
 });
 formatter.result({
-  "duration": 78291493,
+  "duration": 396742702,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterFieldsSteps.insert_a_main_adress()"
 });
 formatter.result({
-  "duration": 88566630,
+  "duration": 521602911,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterFieldsSteps.insert_a_reference_address()"
 });
 formatter.result({
-  "duration": 94266412,
+  "duration": 553903196,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterFieldsSteps.select_an_academic_background()"
 });
 formatter.result({
-  "duration": 34643886,
+  "duration": 157699220,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterFieldsSteps.select_a_course_of_interest()"
 });
 formatter.result({
-  "duration": 64896514,
+  "duration": 287578984,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterFieldsSteps.save_the_form()"
 });
 formatter.result({
-  "duration": 38512514,
+  "duration": 191701722,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterFieldsSteps.the_system_informs_the_administrator_of_successfully_register()"
 });
 formatter.result({
-  "duration": 23175,
+  "duration": 99460697,
   "status": "passed"
 });
 formatter.after({
-  "duration": 215685882,
+  "duration": 161154096,
   "status": "passed"
 });
 });
