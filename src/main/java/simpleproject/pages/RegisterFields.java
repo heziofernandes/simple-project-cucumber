@@ -5,13 +5,19 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.thoughtworks.selenium.Wait;
 
 import cucumber.api.java.After;
 import simpleproject.framework.MessageConstants;
 
 public class RegisterFields {
 	private WebDriver driver = new BasePage().getDriver();
+	private WebDriverWait Wait = new WebDriverWait(driver, 10);
 
 	@FindBy(id = "login")
 	private WebElement typeLogin;
@@ -82,6 +88,7 @@ public class RegisterFields {
 	}
 
 	public void assertSave() {
+		Wait.until(ExpectedConditions.presenceOfElementLocated(By.id("message")));
 		Assert.assertEquals("Cadastro Realizado com Sucesso!", driver
 				.findElement(By.id("message")).getText());
 	}

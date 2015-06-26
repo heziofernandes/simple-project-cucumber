@@ -14,5 +14,4 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(tags = "@cadastro", format = { "pretty", "html:target/cucumber" }, monochrome = true, glue = "classpath:simpleproject/stepsdefinitions", features = "classpath:features")
 public class TestRegistrationFormPt {
 	
-	
 }

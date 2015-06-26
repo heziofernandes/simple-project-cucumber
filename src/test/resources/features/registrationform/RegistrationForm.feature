@@ -1,4 +1,3 @@
-# language:en
 @registration
 Feature: registration user
   	In order to complete registration

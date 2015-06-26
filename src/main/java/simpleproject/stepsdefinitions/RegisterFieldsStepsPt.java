@@ -25,8 +25,8 @@ public class RegisterFieldsStepsPt {
 		registerFields = PageFactory.initElements(driver, RegisterFields.class);
 	}
 	
-	@Dado("^que o usuário esta logado$")
-	public void que_o_usuário_esta_logado() throws Throwable {
+	@Dado("^que o administrador do sistema esta logado$")
+	public void que_o_administrador_do_sistema_esta_logado(){
 		registerFields.assertlogOnSystem();
 	}
 	
@@ -77,8 +77,9 @@ public class RegisterFieldsStepsPt {
 
 	}
 
-	@Então("^o sistema informa para o usuário, cadastro com sucesso$")
-	public void o_sistema_informa_para_o_usuário_cadastro_com_sucesso()
-			throws Throwable {
+	@Então("^o sistema informa para o usuário, que o cadastro foi realizado com sucesso$")
+	public void o_sistema_informa_para_o_usuário_que_o_cadastro_foi_realizado_com_sucesso()	throws Throwable {
+		registerFields.assertSave();
 	}
+	
 }

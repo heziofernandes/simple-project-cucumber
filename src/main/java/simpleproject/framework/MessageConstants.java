@@ -9,7 +9,7 @@ package simpleproject.framework;
 public class MessageConstants {
 	 
 	
-	public static final String URL =  "file:///home/hezinho/dev/simple-project/formularioPalestra/formautomacao.html";
+	public static final String URL =  "file:///home/hezinho/dev/form-html-simple-project-cucumber/formautomacao.html";
 
 	// This path URL search the downloaded file with the Git project .
 //	public static final String URL = "Insert path URL here";

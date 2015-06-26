@@ -1,11 +1,11 @@
-# language: pt
+#language:pt
 @cadastro
 Funcionalidade: Preencher formulário
-  	Como um usuário
-  Eu quero realizar o cadastro de uma pessoal no sistema
+  	Como administrador do sistema
+  Eu quero realizar um cadastro basico de um novo usuário
 
-  Contexto: Acessar ao formulario de cadastro
-    Dado que o usuário esta logado
+  Contexto: Acessar o formulario de cadastro
+    Dado que o administrador do sistema esta logado
 
   @cadastroFormulario
   Cenário: Realiza cadastro de formulário
@@ -18,4 +18,4 @@ Funcionalidade: Preencher formulário
     E Selecionar uma formação acadêmica
     E Selecionar uma curso de interesse
     E Salvar o formulário
-    Então o sistema informa para o usuário, cadastro com sucesso
+    Então o sistema informa para o usuário, que o cadastro foi realizado com sucesso
