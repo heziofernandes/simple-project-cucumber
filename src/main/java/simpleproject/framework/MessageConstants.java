@@ -7,17 +7,15 @@ package simpleproject.framework;
  */
 
 public class MessageConstants {
-	 
-	
-	public static final String URL =  "file:///home/hezinho/dev/form-html-simple-project-cucumber/formautomacao.html";
 
-	// This path URL search the downloaded file with the Git project .
-//	public static final String URL = "Insert path URL here";
-	public static final String ARQUIVO_OK = ClassLoader.getSystemResource("data.csv").getPath();
-	public static final String LOGIN = "Teste_Drumfeel";
+	// Enter the file path "formautomation.html" downloaded from the Git
+	// project " form- html -simple- project- cucumber"
+	public static final String URL = "file:///home/hezio/dev/form-html-simple-project-cucumber/formautomacao.html";
+
+	public static final String LOGIN = "@drumfeel";
 	public static final String PASSWORD = "1235456@#!";
-	public static final String NOME = "Drumfeel";
+	public static final String NOME = "Hezinho Drumfeel";
 	public static final String EMAIL = "drumfeel@email.com";
 	public static final String ADDRESS = "Street no bugs hahaha!";
-	public static final String REFERENCE = "Next to gas station \"Wrecked Car\"";
+	public static final String REFERENCE = "near anywhere";
 }

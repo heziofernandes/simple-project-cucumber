@@ -1,1 +1,7 @@
 /target/
+.idea/
+.gitignore.swp
+.project
+.settings
+.classpath
+*.iml

@@ -1,9 +1,9 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/registrationform/RegistrationForm.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/Registration.feature");
 formatter.feature({
   "line": 2,
-  "name": "registration user",
+  "name": "register a new User in the system,",
   "description": "\tIn order to complete registration\n\tAs administrator\r\n\tI want to registering a user in the system",
-  "id": "registration-user",
+  "id": "register-a-new-user-in-the-system,",
   "keyword": "Feature",
   "tags": [
     {
@@ -25,17 +25,17 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "RegisterFieldsSteps.the_administrator_is_logged_in()"
+  "location": "RegisterSteps.the_administrator_is_logged_in()"
 });
 formatter.result({
-  "duration": 3993666301,
+  "duration": 2073044011,
   "status": "passed"
 });
 formatter.scenario({
   "line": 11,
   "name": "Performs registration form",
   "description": "",
-  "id": "registration-user;performs-registration-form",
+  "id": "register-a-new-user-in-the-system,;performs-registration-form",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
@@ -67,7 +67,7 @@ formatter.step({
 });
 formatter.step({
   "line": 16,
-  "name": "insert a main adress",
+  "name": "insert a main address",
   "keyword": "And "
 });
 formatter.step({
@@ -96,77 +96,77 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "RegisterFieldsSteps.insert_a_name()"
+  "location": "RegisterSteps.insert_a_name()"
 });
 formatter.result({
-  "duration": 400018813,
+  "duration": 164188588,
   "status": "passed"
 });
 formatter.match({
-  "location": "RegisterFieldsSteps.insert_a_login()"
+  "location": "RegisterSteps.insert_a_login()"
 });
 formatter.result({
-  "duration": 400270156,
+  "duration": 165715651,
   "status": "passed"
 });
 formatter.match({
-  "location": "RegisterFieldsSteps.insert_a_password()"
+  "location": "RegisterSteps.insert_a_password()"
 });
 formatter.result({
-  "duration": 404273845,
+  "duration": 162933597,
   "status": "passed"
 });
 formatter.match({
-  "location": "RegisterFieldsSteps.insert_a_email()"
+  "location": "RegisterSteps.insert_a_email()"
 });
 formatter.result({
-  "duration": 399361939,
+  "duration": 160607910,
   "status": "passed"
 });
 formatter.match({
-  "location": "RegisterFieldsSteps.insert_a_main_adress()"
+  "location": "RegisterSteps.insert_a_main_adress()"
 });
 formatter.result({
-  "duration": 483752814,
+  "duration": 181510476,
   "status": "passed"
 });
 formatter.match({
-  "location": "RegisterFieldsSteps.insert_a_reference_address()"
+  "location": "RegisterSteps.insert_a_reference_address()"
 });
 formatter.result({
-  "duration": 570218709,
+  "duration": 171220125,
   "status": "passed"
 });
 formatter.match({
-  "location": "RegisterFieldsSteps.select_an_academic_background()"
+  "location": "RegisterSteps.select_an_academic_background()"
 });
 formatter.result({
-  "duration": 164349044,
+  "duration": 85449564,
   "status": "passed"
 });
 formatter.match({
-  "location": "RegisterFieldsSteps.select_a_course_of_interest()"
+  "location": "RegisterSteps.select_a_course_of_interest()"
 });
 formatter.result({
-  "duration": 311579922,
+  "duration": 157108268,
   "status": "passed"
 });
 formatter.match({
-  "location": "RegisterFieldsSteps.save_the_form()"
+  "location": "RegisterSteps.save_the_form()"
 });
 formatter.result({
-  "duration": 183106511,
+  "duration": 93656113,
   "status": "passed"
 });
 formatter.match({
-  "location": "RegisterFieldsSteps.the_system_informs_the_administrator_of_successfully_register()"
+  "location": "RegisterSteps.the_system_informs_the_administrator_of_successfully_register()"
 });
 formatter.result({
-  "duration": 160843746,
+  "duration": 100644155,
   "status": "passed"
 });
 formatter.after({
-  "duration": 170517688,
+  "duration": 66813390,
   "status": "passed"
 });
 });
